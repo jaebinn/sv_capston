@@ -1,0 +1,26 @@
+.bar {
+  width: 100%;
+  height: 20px;
+  background-color: #8878cd;
+  box-shadow: 10px 10px 10px #999999; /*그림자*/
+  opacity: 1; /* 요소의 투명도 */
+}
+
+#title {
+  margin: 20px;
+  font-size: 20px;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: bold;
+}
+
+#knut {
+  border: 0;
+  width: 30px;
+  height: 30px;
+}
+
+video {
+  /* margin-left: 100px; */
+  width: 500px;
+  height: 300px;
+}
