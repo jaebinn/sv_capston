@@ -28,6 +28,7 @@ video {
 #login {
   width: 300px;
   text-align: center;
+  font-weight: bold;
 }
 
 #btn_login {
