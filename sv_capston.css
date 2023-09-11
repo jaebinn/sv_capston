@@ -8,7 +8,7 @@
 
 #title {
   margin: 20px;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "SDSamliphopangche_Outline";
   font-weight: bold;
 }
@@ -23,4 +23,19 @@ video {
   /* margin-left: 100px; */
   width: 500px;
   height: 300px;
+}
+
+#login {
+  width: 300px;
+  text-align: center;
+}
+
+#btn_login {
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#btn_register {
+  font-size: 20px;
+  border-radius: 5px;
 }
