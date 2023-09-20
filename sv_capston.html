@@ -9,54 +9,69 @@
   <body>
     <div class="bar"></div>
     <br />
-    <a href="./sv_capston.html" target="_self">
-      <div id="title">
-        <img src="./image/knut.jpg" alt="로고" id="knut" /> 느린학습자와 함께
+    <header id="title">
+      <a
+        href="./sv_capston.html"
+        target="_self"
+        style="text-decoration-line: none"
+      >
+        <img src="./image/knut.jpg" alt="로고" id="knut" /> 충북 사랑의 매듭
+
         <img src="./image/knut.jpg" alt="로고" id="knut" />
-      </div>
-    </a>
-    <!-- <img src="./image/공지사항.jpg" alt=""> -->
-    <fieldset id="login" style="float: left">
-      <legend style="font-size: 25px">로그인</legend>
-      <!-- <label for="user_id"> </label>
-          <input type="text" id="user_id" name="user_id" autofocus />
-          <br />
-          <label for="user_pw"> </label>
-          <input type="password" id="user_pw" name="user_pw" /> -->
-      <br />
-      <a href="./login.html"
-        ><button type="submit" id="btn_login">로그인</button></a
-      >
-      <a href="./register.html"
-        ><button type="submit" id="btn_register">회원가입</button></a
-      >
-    </fieldset>
-    <div class="container">
-      <div class="infos">
-        <div class="info">
-          <a href=""><span>느린학습자가 뭐예요?</span></a>
-          <div class="image"></div>
-        </div>
-        <div class="info">
-          <a href=""><span style="vertical-align: center">공지사항</span></a>
-          <div class="image"></div>
-        </div>
-        <div class="info">
-          <a href=""><span>일일 수학</span></a>
-          <div class="image"></div>
-        </div>
-        <div class="info">
-          <a href=""><span>출석체크</span></a>
-          <div class="image"></div>
-        </div>
-        <div class="info">
-          <a href=""><span>자료실</span></a>
-          <div class="image"></div>
+      </a>
+      <div class="container">
+        <div class="infos">
+          <div class="info">
+            <a href="" style="text-decoration-line: none"
+              ><span>느린학습자?</span></a
+            >
+            <div class="image"></div>
+          </div>
+          <div class="info">
+            <a href="" style="text-decoration-line: none"
+              ><span style="vertical-align: center">공지사항</span></a
+            >
+            <div class="image"></div>
+          </div>
+          <div class="info">
+            <a href="" style="text-decoration-line: none"
+              ><span>대화연습</span></a
+            >
+            <div class="image"></div>
+          </div>
+          <div class="info">
+            <a href="" style="text-decoration-line: none"
+              ><span>학습유형진단</span></a
+            >
+            <div class="image"></div>
+          </div>
+          <div class="info">
+            <a href="" style="text-decoration-line: none"
+              ><span>소통공간</span></a
+            >
+            <div class="image"></div>
+          </div>
         </div>
       </div>
-    </div>
+      <span style="margin-left: 150px; font-size: 15px"
+        >링크위드 대표 이미지 미정</span
+      >
+    </header>
+
+    <button type="submit" class="btn_login" style="margin-left: 90%">
+      <a href="./login.html" style="text-decoration-line: none">로그인</a>
+    </button>
+
+    <button
+      type="button"
+      class="btn_register"
+      onclick="location.href='/member/joinForm'"
+    >
+      <a href="./register.html" style="text-decoration-line: none">회원가입</a>
+    </button>
+
     <hr />
-    <body>
+    <aside>
       <video
         autoplay
         controls
@@ -65,6 +80,12 @@
         preload="bbb"
         src="./image/느린학습자를 아시나요.mp4"
       ></video>
-    </body>
+      <img
+        src="./image/느린학습자 홍보사진.jpg"
+        alt=""
+        style="width: 990px; height: 350px"
+      />
+      <p class="animated-text">충북 사랑의 매듭 환영합니다.</p>
+    </aside>
   </body>
 </html>
