@@ -7,30 +7,34 @@
     <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
-    <body class="gray-body">
-      <div class="wrap-login">
-        <section class="login-section">
-          <h2>로그인</h2>
-          <h1>충북 사랑의 매듭</h1>
-          <!--form Start-->
-          <form class="login-form">
-            <div class="input-box">
-              <input id="inputId" type="text" placeholder="아이디" />
-            </div>
-            <div class="input-box">
-              <input id="inputPw" type="password" placeholder="비밀번호" />
-            </div>
-            <a href="./sv_capston.html">뒤로 가기</a>
-            <button type="button" id="loginBtn" class="btn primary">
-              로그인
-            </button>
+    <section class="login">
+      <h2>로그인</h2>
+      <ul style="list-style-type: none">
+        <li><input type="text" placeholder="아이디" title="아이디입력" /></li>
+        <li>
+          <input type="password" placeholder="비밀번호" title="비밀번호입력" />
+        </li>
+        <li>
+          <input type="checkbox" id="chk_id" value="on" /><label for="chk_id"
+            >아이디저장</label
+          >
+        </li>
 
-            <div class="form-end"></div>
-          </form>
-          <!--form End-->
-        </section>
+        <button>로그인</button>
+      </ul>
+      <div>
+        <ul style="list-style-type: none">
+          <li>
+            <a href="./register.html" style="text-decoration-line: none"
+              >회원가입</a
+            >
+          </li>
+          <li><a href="" style="text-decoration-line: none">아이디찾기</a></li>
+          <li>
+            <a href="" style="text-decoration-line: none">비밀번호찾기</a>
+          </li>
+        </ul>
       </div>
-      <script src="./login.js"></script>
-    </body>
+    </section>
   </body>
 </html>
