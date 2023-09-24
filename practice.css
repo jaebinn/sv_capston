@@ -54,7 +54,7 @@
   transform: skewX(0deg);
   z-index: 1;
 }
-.info_dropdown {
+.info-dropdown {
   display: none;
   background-color: #fff;
   min-width: 50px;
@@ -63,33 +63,28 @@
   z-index: 1;
 }
 
-.info_dropdown a {
+.info-dropdown a {
   color: #333;
   text-decoration: none;
   padding: 12px 16px;
   display: block;
 }
 
-.info_dropdown a:hover {
+.info-dropdown a:hover {
   background-color: #f5f5f5;
 }
-.info:hover .info_dropdown {
+.info:hover .info-dropdown {
   display: block;
   border-radius: 10px;
 }
 /* .btn_login {
-  border-radius: 1px;
-  cursor: pointer;
-}
-
-.btn_register {
-  border-radius: 1px;
-} */
-
-video {
-  width: 500px;
-  height: 350px;
-}
+        border-radius: 1px;
+        cursor: pointer;
+      }
+      
+      .btn_register {
+        border-radius: 1px;
+      } */
 
 .animated-text {
   font-family: NotoSansKrRegular;
@@ -104,18 +99,7 @@ video {
   margin-left: 100px;
   animation: slide 3s;
 }
-.animated-title {
-  font-family: NotoSansKrRegular;
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  top: 150px;
-  left: 80px;
-  letter-spacing: -1px;
-  color: #8878cd;
-  animation: fadeIn 3s;
-  /* text-align: left; */
-}
+
 @keyframes slide {
   from {
     left: -100px;
@@ -123,23 +107,4 @@ video {
   to {
     left: 500px;
   }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  } /* 처음에 투명도 0 */
-  100% {
-    opacity: 1;
-  } /* 끝에 투명도 1 (완전 불투명) */
-}
-section img {
-  display: block;
-  margin: auto;
-}
-h2 {
-  text-align: center;
-}
-article p {
-  text-align: center;
-  font-size: 20px;
 }
