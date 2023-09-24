@@ -77,15 +77,10 @@
   display: block;
   border-radius: 10px;
 }
-/* .btn_login {
-  border-radius: 1px;
-  cursor: pointer;
+.container nav {
+  margin-left: 100px;
+  margin-top: 20px;
 }
-
-.btn_register {
-  border-radius: 1px;
-} */
-
 video {
   width: 500px;
   height: 350px;
@@ -96,7 +91,7 @@ video {
   font-size: 30px;
   font-weight: 500;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 500px;
   letter-spacing: -1px;
   color: #38acb6;
@@ -109,7 +104,7 @@ video {
   font-size: 30px;
   font-weight: bold;
   position: absolute;
-  top: 150px;
+  top: 125px;
   left: 80px;
   letter-spacing: -1px;
   color: #8878cd;
