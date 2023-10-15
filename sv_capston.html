@@ -4,121 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LinkWith</title>
-    <link rel="stylesheet" href="./sv_capston.css" />
+    <link rel="stylesheet" href="css/sv_capston.css" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 구글 웹 폰트 적용 -->
+    <style>
+      @import url("fonts.googleapis.com/earlyaccess/jejumyeongjo.css");
+    </style>
+	
+</head>
   </head>
   <body>
-    <div class="bar"></div>
-    <br />
-    <header id="title">
-      <a
-        href="./sv_capston.html"
-        target="_self"
-        style="text-decoration-line: none"
-      >
-        <img src="./image/knut.jpg" alt="로고" id="knut" /> 충북 사랑의 매듭
+    <!-- navigation.ejs -->
+<!-- 사이트 상단 -->
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+  <a class="navbar-brand" href="./sv_capston.html">
+      충북 사랑의 매듭
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <img src="./image/knut.jpg" alt="로고" id="knut" />
-      </a>
-    </header>
-    <nav class="container">
-      <div class="infos">
-        <div class="info">
-          <a href="./slow_leaner.html" style="text-decoration-line: none"
-            ><span>느린학습자?</span></a
-          >
-          <div class="info_dropdown">
-            <a href="./slow_leaner.html">정의</a>
-            <a href="#">관련 기사</a>
-          </div>
-        </div>
-        <div class="info">
-          <a href="" style="text-decoration-line: none"
-            ><span>충복복지사업</span></a
-          >
-          <div class="info_dropdown">
-            <a href="#">항목 1</a>
-            <a href="#">항목 2</a>
-            <a href="#">항목 3</a>
-          </div>
-        </div>
-        <div class="info">
-          <a href="./practice.html" style="text-decoration-line: none"
-            ><span>대화연습</span></a
-          >
-          <div class="info_dropdown">
-            <a href="#">초급</a>
-            <a href="#">중급</a>
-            <a href="#">고급</a>
-          </div>
-        </div>
-        <div class="info">
-          <a href="./learning_style.html" style="text-decoration-line: none"
-            ><span>학습유형진단</span></a
-          >
-          <div class="info_dropdown">
-            <a href="#">검사하기</a>
-            <a href="#">항목 2</a>
-            <a href="#">항목 3</a>
-          </div>
-        </div>
-        <div class="info">
-          <a href="./communication.html" style="text-decoration-line: none"
-            ><span>소통공간</span></a
-          >
-          <div class="info_dropdown">
-            <a href="#">게시판</a>
-            <a href="#">상담</a>
-            <a href="#">자료실</a>
-          </div>
-        </div>
-        <nav>
-          <button type="submit" class="btn_login">
-            <a href="./login.html" style="text-decoration-line: none">로그인</a>
-          </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">느린학습자란?</a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">정의</a></li>
+                  <li><a href="#">활동나눔</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">자가진단</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./notice_board.html">소통공간</a>
+              <ul class="dropdown-menu">
+                  <li><a href="./notice_board.html">자유게시판</a></li>
+                  <li><a href="./qna.html">Q&A</a></li>
+                  <li><a href="./dataroom.html">자료실</a></li>
+              </ul>
+          </li>
 
-          <button
-            type="button"
-            class="btn_register"
-            onclick="location.href='/member/joinForm'"
-          >
-            <a href="./register.html" style="text-decoration-line: none"
-              >회원가입</a
-            >
-          </button>
-        </div>
-      </nav>
-    </nav>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">대화연습</a>
+              <ul class="dropdown-menu">
+                  <li><a href="#">초급</a></li>
+                  <li><a href="#">중급</a></li>
+                  <li><a href="#">고급</a></li>
+              </ul>
+          </li>
+      </ul>
 
-    <p class="animated-text">충북 사랑의 매듭 환영합니다.</p>
-    <hr />
-    <aside>
-      <p class="animated-title">느리지만 나답게 크는 아이</p>
-      <video
-        autoplay
-        controls
-        loop
-        muted
-        poster="aaa"
-        preload="bbb"
-        src="./image/느린학습자를 아시나요.mp4"
-      ></video>
-      <img
-        src="./image/느린학습자 홍보사진.jpg"
-        alt=""
-        style="width: 990px; height: 350px"
-      />
-    </aside>
-    <section>
-      <img src="./image/slice.JPG" alt="" />
-      <h2>충북 사랑의 매듭 소개</h2>
-      <img src="./image/slice.JPG" alt="" />
-    </section>
-    <article>
-      <p>
-        한국교통대 학생들이 준비한 느린학습자를 위한 웹사이트입니다. 느린 학습자
-        <br />즉, 경계선 지능장애를 가진 우리 아이들에게 도움이 될 수 있도록
-        최선을 다하겠습니다.
+      <a href="./login.html" class="btn btn-light mr-2">로그인</a>
+      <a href="./register.html" class="btn btn-light">회원가입</a>
+    </div>
+</nav>
+  <section>
+    <span id="text1"><strong>GROWTH IS A PROCESS . . .</strong></span>
+    <p id="text2">느린학습자를 위한 작은 소통공간</p>
+    <p id="text3">느린학습자 부모들과 소통하기</p>
+    <a href="./notice_board.html"><button type="button" class="btn btn-outline-success">소통공간</button></a>
+    <img src="./image/느린학습자.png" alt="">
+  </section>
+
+  <section class="main_text">
+    <img src="./image/연필.JPG" alt="" id="pencil">
+  <h2 id="bold">느린학습자</h2><h2 id="bold_1">무엇인가요?</h2><br>
+  <p class="jm-font">느린학습자(경계선지능인)란 지능지수(IQ) 71~84사이에 존재하는 사람들을 말합니다.</p> 
+    <p class="jm-font">느린학습자 아동들은 일반적인 아동들이 경험하는 교육과 사회화 과정에서 어려움을 <br>겪고 있지만 이에 대해 추가적인 중재가 있다면 이를 충분히 극복해 나갈 수 있습니다.</p>
+    <p class="jm-font">충북 사랑의 매듭에서는 느린학습자의 어려움을 공감하고</p> <p class="jm-font"><strong>느린학습자 진단과 맞춤형 학습 및 소통공간 서비스</strong>를 운영 중에 있습니다.</p>
+  </p>
+  </section>
+  <div><img src="./image/아이들.jpg" alt="" id="child"></div>
+  <br><br><br>
+  
+  <section class="active">
+    <div class="widget padding" data-height="30" style="margin-top:px; margin-bottom:px;">
+      <div id="padding_w20230424a0ef4133a7fd7" style="width:100%; min-height:1px; height:30px; "></div>
+    </div>
+    <div>
+      <h2 id="active_text">활동나눔</h2>
+      <button type="button" id="active_btn">
+        자세히보기</button>
+    </div>
+    <br>
+    
+    <div id="card" style="float: left;">
+      <img class="img" src="./image/conference.png" alt="">
+      <h1 class="heading">링크위드 세 번째 회의</h1>
+      <div class="data">
+        <span class="date">2023-10-24</span>
+        <span class="user-id">링크위드</span>
+      </div>
+      <p class="texts">
+        링크위드 회의
       </p>
-    </article>
+    </div>
+    <div id="card" style="float: left;">
+      <img class="img" src="./image/conference.png" alt="">
+      <h1 class="heading">링크위드 두 번째 회의</h1>
+      <div class="data">
+        <span class="date">2023-09-26</span>
+        <span class="user-id">링크위드</span>
+      </div>
+      <p class="texts">
+        링크위드 회의
+      </p>
+    </div>
+    <div id="card" style="float: left;">
+      <img class="img" src="./image/conference.png" alt="">
+      <h1 class="heading">링크위드 첫 번째 회의</h1>
+      <div class="data">
+        <span class="date">2023-09-12</span>
+        <span class="user-id">링크위드</span>
+      </div>
+      <p class="texts">
+        링크위드 회의
+      </p>
+    </div>
+  </section>
+  <section class="introduce">
+    <h3 class="jm-font">충북 사랑의 매듭</h3>
+    <p class="jm-font">상호명: 충북 사랑의 매듭</p><br><br>
+    <p class="jm-font">기획팀: 강제덕, 김예빈, 이지현 | 개발팀: 김지훈, 신재빈 | 디자인팀: 김성애, 김연수</p>
+    <p class="jm-font" style="margin-left: 1100px;">한국교통대 학생들이 제작한 느린학습자 사이트입니다.</p>
+    <img src="./image/knut.jpg" alt="">
+  </section>
+
+  <footer class="fixed-bottom" style="background-color: #dee2e6">
+    <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023_LinkWith
+    </div>
+     
+  </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

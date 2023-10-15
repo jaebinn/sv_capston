@@ -1,0 +1,223 @@
+section img {
+  height: 650px;
+  width: 100%;
+}
+#text1 {
+  position: absolute;
+  font-size: 26px;
+  margin-top: 50px;
+  font-family: sans-serif;
+  color: #fff;
+  width: 258px;
+  white-space: nowrap;
+  text-shadow: 1px 1px 1px #000;
+}
+#text2 {
+  position: absolute;
+  font-size: 36px;
+  margin-top: 250px;
+  margin-left: 100px;
+  font-family: sans-serif;
+  color: #000066;
+  width: 258px;
+  font-weight: bold;
+  white-space: nowrap;
+  animation: slide 2s ease-out;
+}
+#text3 {
+  position: absolute;
+  font-size: 18px;
+  margin-top: 320px;
+  margin-left: 230px;
+  color: #000066;
+  font-family: sans-serif;
+  animation: cliptext 1s ease-out;
+}
+section button {
+  position: absolute;
+  margin-left: 320px;
+  top: 360px;
+  animation: cliptext 1s ease-out;
+}
+@keyframes slide {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes cliptext {
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    transform: translateY(100%);
+  }
+  95% {
+    transform: translateY(0%);
+  }
+  100% {
+    clip-path: polygon(0% 00%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes disappear {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: -100px;
+    opacity: 0;
+  }
+}
+.main_text #pencil {
+  margin-top: 80px;
+  margin-left: 150px;
+  width: 50px;
+  height: 50px;
+}
+#bold {
+  margin-left: 150px;
+  font-size: 40px;
+  color: navy;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#bold_1 {
+  margin-left: 150px;
+  font-weight: 1px bold;
+  font-family: sans-serif;
+}
+
+.jm-font {
+  margin-left: 150px;
+  color: rgb(67, 69, 73);
+  font-size: 20px;
+}
+p strong {
+  background-color: #000066;
+  color: white;
+}
+.main_text {
+  float: left;
+}
+div #child {
+  width: 400px;
+  height: 300px;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.active {
+  background-color: rgb(229, 231, 235);
+  border-width: 0;
+  border-style: solid;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+}
+.active #active_text {
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 150px;
+  font-family: sans-serif;
+}
+.active #active_btn {
+  position: absolute;
+  margin-left: 1250px;
+  top: 30px;
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  text-align: right;
+  background-color: #d8d8d8;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  text-shadow: 1px 1px 1px #000;
+}
+.active #active_btn:hover {
+  box-shadow: -3px -3px 3px rgb(172, 172, 172), 3px 3px 3px rgb(237, 237, 237);
+  transition: 0.3s;
+}
+
+/*Ä«µå css*/
+#card {
+  width: 350px;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  margin: 50px;
+  margin-left: 90px;
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#card img {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+
+#card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: translateY(-10px);
+}
+
+#card .heading {
+  font-size: 28px;
+}
+
+#card .data {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #666;
+}
+
+#card .data span {
+  padding: 0;
+}
+
+#card .data .date {
+  margin-bottom: 2px;
+}
+
+#card .data .user-id {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+#card .texts {
+  font-size: 14px;
+  line-height: 18px;
+}
+.introduce {
+  background-color: #ffffff;
+  width: 100%;
+  height: 800px;
+  margin-top: 100px;
+}
+
+.introduce h3 {
+  position: absolute;
+  margin-top: 650px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.introduce p {
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 650px;
+  margin-left: 450px;
+}
+
+.introduce img {
+  width: 50px;
+  height: 50px;
+  margin-top: 630px;
+  margin-left: 1015px;
+}

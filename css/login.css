@@ -1,3 +1,5 @@
+/* login.css */
+/* 로그인 화면 css */
 .login {
   width: 410px;
   position: absolute;
@@ -5,6 +7,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .login h2 {
   font-size: 32px;
   color: #111;
@@ -13,25 +16,31 @@
   line-height: 1;
   padding: 0 0 20px;
 }
+
 .login > ul {
   padding: 40px 0 33px;
 }
+
 .login > ul li {
   padding: 0 0 12px;
 }
+
 .login > ul li input {
   width: 100%;
   height: 46px;
   box-sizing: border-box;
 }
+
 .login > ul li input::-webkit-input-placeholder {
   font-size: 16px;
   color: #9fa19f;
 }
+
 .login > ul li input[type="checkbox"] {
   position: absolute;
   left: -3000%;
 }
+
 .login > ul li input[type="checkbox"] + label:before {
   content: "";
   display: inline-block;
@@ -41,9 +50,11 @@
   background: #fff;
   vertical-align: -5px;
 }
+
 .login li input[type="checkbox"]:checked + label:before {
   background: url(./image/check_img.png) no-repeat center #666;
 }
+
 .login button {
   width: 100%;
   height: 56px;
@@ -51,18 +62,22 @@
   font-size: 18px;
   color: #fff;
 }
+
 .login div {
   padding: 0 0 45px;
   margin-right: 50px;
 }
+
 .login div ul {
   display: flex;
   justify-content: center;
 }
+
 .login div ul li {
   position: relative;
   padding: 0 18px;
 }
+
 .login div ul li ~ li:after {
   content: "";
   position: absolute;
@@ -73,10 +88,12 @@
   background-color: #111;
   transform: rotate(25deg);
 }
+
 .login div ul li a {
   font-size: 14px;
   color: #111;
 }
+
 .login > a {
   padding: 0 0 10px;
   font-size: 14px;

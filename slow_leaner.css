@@ -54,7 +54,7 @@
   transform: skewX(0deg);
   z-index: 1;
 }
-.info-dropdown {
+.info_dropdown {
   display: none;
   background-color: #fff;
   min-width: 50px;
@@ -63,35 +63,35 @@
   z-index: 1;
 }
 
-.info-dropdown a {
+.info_dropdown a {
   color: #333;
   text-decoration: none;
   padding: 12px 16px;
   display: block;
 }
 
-.info-dropdown a:hover {
+.info_dropdown a:hover {
   background-color: #f5f5f5;
 }
-.info:hover .info-dropdown {
+.info:hover .info_dropdown {
   display: block;
   border-radius: 10px;
 }
-/* .btn_login {
-    border-radius: 1px;
-    cursor: pointer;
-  }
-  
-  .btn_register {
-    border-radius: 1px;
-  } */
+.container nav {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+video {
+  width: 500px;
+  height: 350px;
+}
 
 .animated-text {
   font-family: NotoSansKrRegular;
   font-size: 30px;
   font-weight: 500;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 500px;
   letter-spacing: -1px;
   color: #38acb6;
@@ -99,7 +99,18 @@
   margin-left: 100px;
   animation: slide 3s;
 }
-
+.animated-title {
+  font-family: NotoSansKrRegular;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 125px;
+  left: 80px;
+  letter-spacing: -1px;
+  color: #8878cd;
+  animation: fadeIn 3s;
+  /* text-align: left; */
+}
 @keyframes slide {
   from {
     left: -100px;
