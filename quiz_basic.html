@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkWith</title>
+    <title>대화연습_basic</title>
     <link rel="stylesheet" href="css/sv_capston.css" />
     <link rel="stylesheet" href="./css/notice_board.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="./css/quiz.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://webfontworld.github.io/DungGeunMo/DungGeunMo.css" rel="stylesheet">
+    <link href="https://webfontworld.github.io/NexonMabinogi/MabinogiClassic.css" rel="stylesheet">
     <!-- 구글 웹 폰트 적용 -->
     <style>
       @import url("fonts.googleapis.com/earlyaccess/jejumyeongjo.css");
     </style>
-	
+	<script src="https://kit.fontawesome.com/a076d05399,js"></script>
 </head>
   </head>
   <body>
@@ -63,36 +66,28 @@
       <a href="./register.html" class="btn btn-light">회원가입</a>
     </div>
 </nav>
-  <br>
-  <header class="intro_img">
-    <img src="./image/communication.JPG" alt="">
-  </header>
-  <br><br>
-  
-  <menu>
-    <a href="./notice_board.html" style="text-decoration: none;"><button type="button">소통공간</button></a>
-    <div>
-      <a href="./notice_board.html" style="text-decoration: none;"><button type="button">게시판</button></a>
-      <a href="./qna.html" style="text-decoration: none;"><button type="button">Q & A</button></a>
-      <a href="./dataroom.html" style="text-decoration: none;"><button type="button">자료실</button></a>
-    </div>
-    <div>
-      <h5>자유게시판</h5>
-      <p>느린학습자 부모들과 소통하는 공간입니다.</p>
-      <a href="./sv_capston.html" id="home"><img src="./image/홈.JPG" alt=""></a>>
-      <a href="./notice_board.html" style="text-decoration: none;">소통공간</a>>
-      <a href="./notice_board.html">자유게시판</a>
-      <hr>
-    </div>
-    <span></span>
-    
-    
-    
-  </menu>
-  <main>
-    
+
+    <!-- Start Quiz Button -->
+    <!-- <img src="./image/퀴즈.png" class="quiz" alt=""> -->
+    <main>
+        <!-- <div class="start_btn"><button>Start Quiz</button></div> -->
+        <!-- Info Box -->
+        <div class="info_box">
+            <div class="info_title">
+                <span>대화놀이</span>
+            </div>
+            <div class="info_list">
+                <div class="info">1. 대화연습 <strong style="color: red;">초급방</strong>입니다.</div>
+                <div class="info">2. 다음 대화에 이어질 알맞은 문장 혹은 단어를 잘 선택하세요.</div>
+                <div class="info">3. 정답을 체크하는 순간 정답유무<strong>(정답은 초록색, 오답은 빨간색)</strong>가 보이니 신중히 선택하세요.</div>
+            </div>
+            <div class="buttons">
+                <a href="./sv_capston.html"><button id="quit">나가기</button></a>
+                <a href="./quiz_box_basic.html"><button id="restart">시작!</button></a>
+
+            </div>
+        </div>
         
-  </main>
-    <script src="script.js"></script>
+    </main>
   </body>
 </html>
