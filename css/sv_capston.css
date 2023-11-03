@@ -1,160 +1,36 @@
-/* section img {
-  height: 650px;
-  width: 100%;
-} */
-/* body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-} */
-
-/* slider */
-.slider__wrap {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
 }
 
-.slider__img {
-  /* 이미지 보이는 영역 */
-  position: relative;
+.carousel-inner {
   width: 100%;
-  height: 500px;
-  overflow: hidden;
+  height: 570px;
 }
 
-.slider__inner {
-  /* 이미지를 감싸고 있는 부모 : 움직이는 부분 */
-  display: flex;
-  flex-wrap: wrap;
-  /* width: 8800px; --> js로 이미지 추가되도 전체넓이 가변되게끔! */
-  /* 4000px --> 4800px  : 총이미지가 6개로 변경*/
-  height: 450px;
+.carousel-item {
+  height: 36rem;
   position: relative;
 }
 
-.slider {
-  /* 개별적인 이미지 */
+.carousel-item > img {
   position: relative;
-  width: 800px;
-  height: 450px;
-}
-
-.slider::before {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  padding: 5px 10px;
-}
-@media (max-width: 100%) {
-  .slider__img {
-    width: 100%;
-    height: 500px;
-  }
-}
-
-.slider__btn a {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  text-align: center;
-  transition: all 0.2s;
-  line-height: 48px;
-  display: block;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 1);
-  opacity: 0.7;
-}
-.slider__btn a.prev {
+  top: 0;
   left: 0;
+  min-width: 100%;
+  height: 36rem;
 }
-.slider__btn a.next {
-  right: 0;
-}
-.slider__btn a:hover {
-  /* text-shadow: -1px 0 #8545f3, 0 1px #9359f7, 1px 0 #8545f3, 0 -1px #413be1; */
-  border: 1px solid rgba(187, 127, 255, 0.6);
-  box-shadow: inset 0px 0px 5px aquamarine;
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-/* #text1 {
+
+.container button a {
+  background-color: #fe9a2e;
   position: absolute;
-  font-size: 26px;
-  margin-top: 50px;
-  font-family: sans-serif;
-  color: #fff;
-  width: 258px;
-  white-space: nowrap;
-  text-shadow: 1px 1px 1px #000;
-}
-#text2 {
-  position: absolute;
-  font-size: 36px;
-  margin-top: 250px;
-  margin-left: 100px;
-  font-family: sans-serif;
-  color: #000066;
-  width: 258px;
+  top: 200px;
+  right: 450px;
+  padding: 10px 20px;
   font-weight: bold;
-  white-space: nowrap;
-  animation: slide 2s ease-out;
+  color: #fff;
 }
-#text3 {
-  position: absolute;
-  font-size: 18px;
-  margin-top: 320px;
-  margin-left: 230px;
-  color: #000066;
-  font-family: sans-serif;
-  animation: cliptext 1s ease-out;
-} */
-section button {
-  position: absolute;
-  margin-left: 320px;
-  top: 360px;
-  animation: cliptext 1s ease-out;
-}
-/* @keyframes slide {
-  from {
-    left: -100px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-@keyframes cliptext {
-  0% {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
-    transform: translateY(100%);
-  }
-  95% {
-    transform: translateY(0%);
-  }
-  100% {
-    clip-path: polygon(0% 00%, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
-@keyframes disappear {
-  from {
-    left: 0;
-    opacity: 1;
-  }
-  to {
-    left: -100px;
-    opacity: 0;
-  }
-} */
+
 .main_text #pencil {
   margin-top: 80px;
   margin-left: 150px;
@@ -203,7 +79,7 @@ div #child {
 .active #active_text {
   font-size: 32px;
   font-weight: 700;
-  margin-left: 150px;
+  margin-left: 100px;
   font-family: sans-serif;
 }
 .active #active_btn {

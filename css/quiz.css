@@ -10,7 +10,6 @@
 }
 
 .start_btn,
-.info_box,
 .quiz_box {
   position: absolute;
   top: 50%;
@@ -19,6 +18,17 @@
   /* display: none; */
   width: 540px;
   height: 540px;
+  background: #fff;
+  border-radius: 5px;
+}
+.info_box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+  width: 540px;
+  height: 280px;
   background: #fff;
   border-radius: 5px;
 }
@@ -75,6 +85,12 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+section img {
+  width: 400px;
+  height: 400px;
+  margin-top: 350px;
+  margin-left: 570px;
 }
 .buttons button#quit {
   border-color: #007bff;
