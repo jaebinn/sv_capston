@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "SDMiSaeng"; /*글꼴*/
+  src: local("SDMiSaeng"), url("SDMiSaeng.eot"),
+    url("SDMiSaeng.woff") format("woff"),
+    url("SDMiSaeng.ttf") format("truetype");
+}
+.sdms-font {
+  font-family: "SDMiSaeng", sans-serif; /*웹 폰트 지정*/
+  font-size: 23px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+main .hi {
+  margin-top: 130px;
+  font-weight: 500;
+  margin-left: 510px;
+}
+main .hi:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13%;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #39393d;
+  background-color: #dcdcde;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.wrap {
+  padding: 20px;
+  margin-left: 490px;
+  letter-spacing: -0.5px;
+}
+.tab_menu {
+  position: relative;
+  /* margin-left: 130px; */
+}
+.our__title-line {
+  display: inline-block;
+  position: relative;
+  padding-right: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #39393d;
+  background-color: #fff;
+}
+.our__sub-title {
+  margin-top: 59px;
+  margin-bottom: 19px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #1d1d1e;
+}
+.our__title-wrapper {
+  position: relative;
+  margin-bottom: 17px;
+}
+.our__title-wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dcdcde;
+}
+.tab_menu .list li {
+  float: left;
+  margin-right: 14px;
+}
+.tab_menu .list .btn {
+  font-size: 13px;
+  font-weight: bold;
+}
+.tab_menu .list .cont {
+  display: none;
+  position: absolute;
+  /* top: 25px; */
+  left: 0;
+  margin: 20px;
+  color: #000;
+  text-align: left;
+  /* background: #333; */
+  width: 850px;
+  height: 100%;
+  /* line-height: 100px; */
+}
+
+.tab_menu .list li.is_on .btn {
+  font-weight: bold;
+  color: green;
+}
+.tab_menu .list li.is_on .cont {
+  display: block;
+}
+.card {
+  width: 350px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 30px 30px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.card img {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: translateY(-10px);
+}
+
+.card .heading {
+  font-size: 20px;
+}
+
+.card .data {
+  display: block;
+  flex-direction: column;
+  font-size: 12px;
+  color: #666;
+}
+
+.card .data span {
+  padding: 0;
+}
+
+.card .data .date {
+  margin-bottom: 2px;
+}

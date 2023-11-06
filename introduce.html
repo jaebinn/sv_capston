@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LinkWith</title>
     <link rel="stylesheet" href="css/sv_capston.css" />
-    <link rel="stylesheet" href="./css/notice_board.css">
+    <link rel="stylesheet" href="css/introduce.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <!-- 구글 웹 폰트 적용 -->
     <style>
       @import url("fonts.googleapis.com/earlyaccess/jejumyeongjo.css");
@@ -21,7 +22,7 @@
 <!-- 사이트 상단 -->
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
   <a class="navbar-brand" href="./sv_capston.html">
-      충북 사랑의 매듭
+    <img src="./image/로고.png" alt="충북 사랑의 매듭" style="width: 125px; height: 40px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,14 +32,15 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#">느린학습자란?</a>
+              <a class="nav-link dropdown-toggle" href="./introduce.html">소개</a>
               <ul class="dropdown-menu">
-                  <li><a href="#">정의</a></li>
-                  <li><a href="#">활동나눔</a></li>
+                  <li><a href="./introduce.html">인사말</a></li>
+                  <li><a href="./activity.html">활동나눔</a></li>
+                  <li><a href="./logo.html">로고</a></li>
               </ul>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">자가진단</a>
+              <a class="nav-link" href="./self.html">자가진단</a>
           </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="./notice_board.html">소통공간</a>
@@ -47,8 +49,7 @@
                   <li><a href="./qna.html">Q&A</a></li>
                   <li><a href="./dataroom.html">자료실</a></li>
               </ul>
-          </li>
-
+            </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="./quiz_basic.html">대화연습</a>
               <ul class="dropdown-menu">
@@ -58,11 +59,120 @@
               </ul>
           </li>
       </ul>
-
       <a href="./login.html" class="btn btn-light mr-2">로그인</a>
       <a href="./register.html" class="btn btn-light">회원가입</a>
     </div>
 </nav>
+<main class="sub_menu">
+    <h2 class="hi">사랑의 매듭 소개</h2>
+</main>
+<div class="wrap">
+    <div class="tab_menu">
+      <ul class="list">
+        <li class="is_on">
+          <a href="./introduce.html" class="btn">인사말</a>
+          <div id="tab1" class="cont" >
+            <dt class="our__title-wrapper">
+                <h4 class="our__title-line">&lt;사랑의 매듭&gt;에서 전합니다.</h4>
+            </dt><p class="sdms-font"></p>안녕하세요?</p>
+            "느린학습자 홈페이지 프로젝트"에 오신 여러분을 환영합니다. <br><p>저희는 느린 학습 능력을 가진 아이들과 그들의 가족을 지원하고자 이 프로젝트를 시작했습니다.
+                우리는 모든 아이들이 자신의 속도에 맞게 세상을 탐험하고 배우는 기회를 가져야 한다고 믿습니다.</p> <p>그러나 때로는 학습 어려움을 겪는 아이들과 그들의 가족은 추가적인 지원과 도구를 필요로 합니다.
+                이 웹사이트는 느린 학습 능력을 가진 아이들을 위한 정보, 자료, 그리고 교육 리소스에 쉽게 접근할 수 있는 공간을 제공합니다.</p> 또한, 학부모와 교사들에게는 어떻게 이 아이들을 지원할 수 있는지에 대한 유용한 정보와 조언을 제공합니다.
+            우리의 목표는 모든 어린이가 긍정적이고 지속적인 학습 경험을 할 수 있도록 돕는 것입니다. 이를 위해 함께 노력하고 지식을 공유하며 함께 성장해 나가길 바랍니다.
+            <br><p><br>감사합니다.</p>
+            <h3 class="our__sub-title">링크위드</h3>
+            <dt class="our__title-wrapper">
+                <h4 class="our__title-line">&lt;링크위드 기획팀&gt;을 소개합니다.</h4>
+            </dt><p class="sdms-font"></p>강제덕</p><p>김예빈</p><p>이지현</p>
+            <dt class="our__title-wrapper">
+                <h4 class="our__title-line">&lt;링크위드 개발팀&gt;을 소개합니다.</h4>
+            </dt><p class="sdms-font"></p>김지훈</p><p>신재빈</p>
+            <dt class="our__title-wrapper">
+                <h4 class="our__title-line">&lt;링크위드 디자인팀&gt;을 소개합니다.</h4>
+            </dt><p class="sdms-font"></p>김성애</p><p>김연수</p>
+             </div>
+        </li>
+        <li>
+          <a href="./introduce.html" class="btn">활동 나눔</a>
+          <div id="tab2" class="cont">
+            <dt class="our__title-wrapper">
+                <h4 class="our__title-line">&lt;링크위드&gt; 회의 사진입니다.</h4>
+            </dt>
+            <div class="card" style="width: 18rem; float: left;">
+              <img class="img" src="./image/회의1.jpg" alt="">
+              <h4 class="heading">링크위드 세 번째 회의2</h4>
+              <div class="data">
+                <span class="date">2023-10-24</span>
+              </div>
+              <p class="texts">
+                링크위드 회의
+              </p>
+              </div>
+              <div class="card" style="width: 18rem; float: left;">
+                <img class="img" src="./image/회의3.jpg" alt="">
+                <h4 class="heading">링크위드 세 번째 회의1</h4>
+                <div class="data">
+                  <span class="date">2023-10-24</span>
+                </div>
+                <p class="texts">
+                  링크위드 회의
+                </p>
+              </div>
+              <div class="card" style="width: 18rem; float: left;">
+                <img class="img" src="./image/회의7.jpg" alt="">
+                <h4 class="heading">링크위드 두 번째 회의2</h4>
+                <div class="data">
+                  <span class="date">2023-09-26</span>
+                </div>
+                <p class="texts">
+                  링크위드 회의
+                </p>
+                </div>
+              <div class="card" style="width: 18rem; float: left;">
+                <img class="img" src="./image/회의2.jpg" alt="">
+                <h4 class="heading">링크위드 두 번째 회의1</h4>
+                <div class="data">
+                  <span class="date">2023-09-26</span>
+                </div>
+                <p class="texts">
+                  링크위드 회의
+                </p>
+                </div>
+                <div class="card" style="width: 18rem; float: left;">
+                  <img class="img" src="./image/회의6.jpg" alt="">
+                  <h4 class="heading">링크위드 첫 번째 회의2</h4>
+                  <div class="data">
+                    <span class="date">2023-09-12</span>
+                  </div>
+                  <p class="texts">
+                    링크위드 회의
+                  </p>
+                  </div>
+                  <div class="card" style="width: 18rem; float: left;">
+                    <img class="img" src="./image/회의5.jpg" alt="">
+                    <h4 class="heading">링크위드 첫 번째 회의1</h4>
+                    <div class="data">
+                      <span class="date">2023-09-12</span>
+                    </div>
+                    <p class="texts">
+                      링크위드 회의
+                  </p>
+              </div>
+           </div>
+        </li>
+        <li>
+          <a href="./logo.html" class="btn">로고 소개</a>
+          <div id="tab3" class="cont">
+            <dt class="our__title-wrapper">
+              <h4 class="our__title-line">&lt;사랑의 매듭&gt; 로고입니다.</h4>
+          </dt>
+            <img src="./image/로고만.JPG" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
+  <script src="./introduce.js"></script>
 </body>
 </html>
