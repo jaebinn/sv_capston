@@ -16,13 +16,14 @@ main .hi {
   margin-top: 130px;
   font-weight: 500;
   margin-left: 510px;
+  text-decoration: underline solid 8px #fe9a2e;
 }
 main .hi:before {
   content: "";
   display: block;
   position: absolute;
-  top: 13%;
-  width: 100%;
+  top: 80%;
+  width: 65%;
   height: 1px;
   border-top: 1px solid #39393d;
   background-color: #dcdcde;
@@ -38,6 +39,7 @@ a {
   padding: 20px;
   margin-left: 490px;
   letter-spacing: -0.5px;
+  position: absolute;
 }
 .tab_menu {
   position: relative;
@@ -54,8 +56,6 @@ a {
   background-color: #fff;
 }
 .our__sub-title {
-  margin-top: 59px;
-  margin-bottom: 19px;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.33;
@@ -69,12 +69,28 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 40%;
-  right: 0;
+  top: 50%;
   width: 100%;
   height: 1px;
   background-color: #dcdcde;
 }
+.intro_wrap {
+  /* margin: 10px auto; */
+  position: relative;
+}
+.intro_wrap img {
+  width: 100%;
+  height: 500px;
+}
+.intro_wrap #intro_text {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  width: 100%;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+}
+
 .tab_menu .list li {
   float: left;
   margin-right: 14px;

@@ -5,6 +5,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+#logo a {
+  display: block;
+  width: 210px;
+  height: 100%;
+  background: url(/src/LinkWith/image/로고.png) no-repeat left top;
+  background-size: 100%;
+  text-indent: -9999px;
+  margin-right: -30px;
+}
+#logo a:link {
+  text-decoration: none;
+}
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
@@ -28,14 +40,67 @@ body {
   height: 36rem;
 }
 .carousel-indicators li {
-  margin: 20px;
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-
-.container button a {
+.container #button_1 a {
   background-color: #fe9a2e;
   position: absolute;
   top: 200px;
   right: 450px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.container #button_2 a {
+  background-color: #a5df00;
+  position: absolute;
+  top: 300px;
+  left: 190px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.container #button_3 a {
+  background-color: #f78181;
+  position: absolute;
+  top: 250px;
+  right: 500px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.container #button_3-1 a {
+  background-color: #f78181;
+  position: absolute;
+  top: 250px;
+  right: 400px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.container #button_3-2 a {
+  background-color: #f78181;
+  position: absolute;
+  top: 250px;
+  right: 300px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.container #button_4 a {
+  background-color: #088a29;
+  position: absolute;
+  top: 230px;
+  left: 190px;
   padding: 10px 20px;
   font-weight: bold;
   color: #fff;
@@ -79,23 +144,29 @@ div #child {
   margin-left: 50px;
 }
 .active {
-  background-color: rgb(229, 231, 235);
   border-width: 0;
   border-style: solid;
+  position: relative;
+}
+.active #background {
   width: 100%;
   height: 700px;
   position: absolute;
 }
 .active #active_text {
+  position: absolute;
   font-size: 32px;
   font-weight: 700;
-  margin-left: 100px;
+  margin-left: 120px;
+  top: 150px;
   font-family: sans-serif;
+  text-decoration: underline solid 8px #f7d358;
 }
 .active #active_btn {
   position: absolute;
-  margin-left: 1250px;
-  top: 30px;
+  top: 150px;
+  left: 280px;
+  right: inherit;
   padding: 12.5px 30px;
   border: 0;
   border-radius: 100px;
@@ -114,19 +185,23 @@ div #child {
 
 /*카드 css*/
 #card {
-  width: 350px;
+  width: 300px;
+  height: 300px;
+  top: 150px;
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
   margin: 50px;
-  margin-left: 90px;
+  margin-left: 120px;
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
 }
 
 #card img {
   text-align: center;
-  width: 100%;
+  width: 300px;
   height: 300px;
+  position: relative;
 }
 
 #card:hover {
@@ -134,60 +209,33 @@ div #child {
   transform: translateY(-10px);
 }
 
-#card .heading {
-  font-size: 28px;
-}
-
-#card .data {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  color: #666;
-}
-
-#card .data span {
-  padding: 0;
-}
-
-#card .data .date {
-  margin-bottom: 2px;
-}
-
-#card .data .user-id {
-  font-size: 16px;
-  color: #000;
-  font-weight: 600;
-}
-
-#card .texts {
-  font-size: 14px;
-  line-height: 18px;
-}
 .introduce {
   background-color: #ffffff;
   width: 100%;
-  height: 800px;
+  height: 700px;
   margin-top: 100px;
 }
 
-.introduce h3 {
+.introduce #footer_logo {
   position: absolute;
-  margin-top: 650px;
-  font-weight: bold;
-  font-size: 30px;
+  width: 300px;
+  height: 100px;
+  margin-top: 550px;
+  left: 0;
 }
 
 .introduce p {
   position: absolute;
   font-size: 15px;
   font-weight: bold;
-  margin-top: 650px;
-  margin-left: 450px;
+  margin-top: 570px;
+  margin-left: 300px;
 }
 
-.introduce img {
+.introduce #knut {
   width: 50px;
   height: 50px;
-  margin-top: 630px;
-  margin-left: 1015px;
+  margin-top: 550px;
+  margin-left: -370px;
+  position: absolute;
 }

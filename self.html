@@ -21,9 +21,11 @@
     <!-- navigation.ejs -->
 <!-- 사이트 상단 -->
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-  <a class="navbar-brand" href="./sv_capston.html">
-    <img src="./image/로고.png" alt="충북 사랑의 매듭" style="width: 125px; height: 40px;">
-  </a>
+    <h1 id="logo">
+        <a href="./sv_capston.html" class="logo">
+          <span>사랑의 매듭</span>
+        </a>
+      </h1>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -42,6 +44,9 @@
           <li class="nav-item">
               <a class="nav-link" href="./self.html">자가진단</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./welfare.html">복지사업</a>
+        </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="./notice_board.html">소통공간</a>
               <ul class="dropdown-menu">
@@ -65,38 +70,54 @@
       <a href="./register.html" class="btn btn-light">회원가입</a>
     </div>
 </nav>
+<div>
+    
+</div>
 <section doz_type="widget" id="w202207055c9931b8b813d">
-    <div class="_widget_data " data-widget-name="메뉴 타이틀" data-widget-type="menu_title" data-widget-anim="none" data-widget-anim-duration="0.7" data-widget-anim-delay="0" data-widget-parent-is-mobile="N"><h1 class="widget_menu_title">자가진단</h1></div>
+    <img src="./image/자기진단 배너.jpg" alt="" style="width: 100%; height: 500px; position: relative;">
+    <div id="self_title">자가진단</h1></div>
 </section>
 <main>
     <div class="wrap">
-        <span class="se-fs-fs24 se-ff-  se-style-unset " id="SE-999c23b7-bae4-4cc2-bd04-84e0689ca16d">느린학습자란 무엇인가? </b></span>
-        <p class="expain">경계선 지능<strong style="color: #FA5858;">(71~84 DSM-IV 기준)</strong>과 그와 유사한 특성으로 사회적 상황에서 <br>어려움을 겪는 사람들로 천천히 배우는 그들의 특성에 따라 느린학습자라고 정의하였습니다.</p>
-        <p class="sub-title"><strong>지능의 정규분포곡선</strong></p>
-        <img id="img_w20220705c6ca65fb7051b" src="https://cdn.imweb.me/thumbnail/20220810/49db67595fe6b.png" class=" org_image" alt="">
-        <hr>
+        <div style="float: left;" >
+            <span id="sub-title"><p style="display: inline; color: #9FF781; font-weight: 700; font-size: 30px;">느린학습자<span>란</span></p><br>무엇인가요?</span><br>
+            <p class="expain">경계선 지능<strong style="color: #FA5858;">(71~84 DSM-IV 기준)</strong>과 그와 유사한 특성으로<br> 사회적 상황에서 어려움을 겪는 사람들로 천천히 배우는<br> 그들의 특성에 따라 느린학습자라고 정의하였습니다.</p>
+            <p id="sub-title1"><strong>지능의 정규분포곡선</strong></p>
+        </div>
+        <div id="wrap_img">
+            
+            <img id="img_w20220705c6ca65fb7051b" src="https://cdn.imweb.me/thumbnail/20220810/49db67595fe6b.png" class=" org_image" alt="">
+        </div>
     </div>
     <div class="wrap">
-        <span class="se-fs-fs24 se-ff-  se-style-unset " id="SE-999c23b7-bae4-4cc2-bd04-84e0689ca16d" style="float: left;">우리 아이 발달과정<br>초기 증상 </b></span>
+        <img src="./image/느린학습자 홈페이지 메인화면 배경.jpg" alt="" id="bgr">
+            <span id="sub_title2" style="float: left;">우리 아이 발달과정<br>초기 증상</span>
+            <p id="text_box">발달적 측면은 복잡한 양상을 나타내며 정확한 진단을 위해서는 전문가의 과학적 거증 단계를 반드시 거쳐야 합니다.</p>
+        </div>
+        
+        
+    <!-- <div class="wrap">
+        <img src="./image/느린학습자 홈페이지 메인화면 배경1.jpg" alt="" id="bgr">
+        <span id="sub_title" style="float: left;">우리 아이 발달과정<br>초기 증상 </b></span>
         <div class="child">
             <div class="text_box">발달적 측면은 복잡한 양상을 나타내며 정확한 진단을 <br>위해서는 전문가의 과학적 거증 단계를 반드시 거쳐야 합니다.</div>
             <br><br><br><br>
             <div style="float: left">
-                <img src="./image/영유아기.JPG" />
+                <img src="./image/유아기 이미지.png" />
             </div>
             <div>
                 <h5><strong>영유아기</strong></h5>
                 <p>신체운동 및 언어, 건강, 발달에서 더디고 의사소통이나 주의집중의 어려움이 나타남</p>
             </div>
             <div style="float: left">
-                <img src="./image/아동기.JPG" />
+                <img src="./image/아동기 이미지.png" />
             </div>
             <div>
                 <h5><strong>아동기</strong></h5>
                 <p>전반적인 학습의 부진을 보이고 또래간의 문제와 심리정서적인 어려움을 나타냄</p>
             </div>
             <div style="float: left">
-                <img src="./image/청소년기.JPG" />
+                <img src="./image/청소년기 이미지 .png" />
             </div>
             <div>
                 <h5><strong>청소년기</strong></h5>
@@ -104,10 +125,13 @@
             </div>
         </div>
         <hr>
-    </div>
+    </div> -->
     <div class="wrap">
-        <span class="se-fs-fs24 se-ff-  se-style-unset " id="SE-999c23b7-bae4-4cc2-bd04-84e0689ca16d">우리아이 자가진단해보기 </b></span>
-        <div><img src="./image/검사.JPG" alt="" style="width: 100px; height: 100px;"></div>
+        <span id="sub-title1" style="text-decoration: underline 3px solid #fe9a2e;">우리아이 자가진단해보기 </br></span>
+        <div><img src="./image/체크리스트 이미지.png" alt="" style="width: 100px; height: 100px; float: left;"></div>
+        <div>
+            <p style="font-weight: 600;">우리 아이의 학습정도는 어느 정도인지 자가진단을<br>통해 확인해보세요!</p>
+        
         <a href="https://k-basics.org/studyView.do?menuSeq=671&datadetailSeq=6184" class="se-oglink-info" target="_blank">
             <div class="se-oglink-info-container">
                 <strong class="se-oglink-title">국가기초학력지원센터</strong>
@@ -115,6 +139,7 @@
                 <p class="se-oglink-summary">제공자료 -> 느린 학습자 선별 체크리스트_검사지</p>
             </div>
         </a>
+        </div>
     </div>
     
 </main>
