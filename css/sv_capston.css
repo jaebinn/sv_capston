@@ -144,29 +144,35 @@ div #child {
   margin-left: 50px;
 }
 .active {
-  border-width: 0;
-  border-style: solid;
-  position: relative;
+  /* border-width: 0; */
+  background-image: url(/src/LinkWith/image/느린학습자\ 홈페이지\ 메인화면\ 배경.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* 배경 이미지를 요소에 맞게 확대/축소 */
+  background-position: center; /* 배경 이미지를 가운데 정렬 */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
 }
 .active #background {
-  width: 100%;
-  height: 700px;
-  position: absolute;
+  /* position: absolute; */
 }
 .active #active_text {
-  position: absolute;
+  /* position: absolute; */
   font-size: 32px;
   font-weight: 700;
-  margin-left: 120px;
-  top: 150px;
+  margin-left: 150px;
   font-family: "Courier New", Courier, monospace;
   text-decoration: underline solid 8px #f7d358;
+  margin-top: 170px;
+  display: block;
 }
 .active #active_btn {
-  position: absolute;
-  top: 150px;
-  left: 280px;
-  right: inherit;
+  /* position: absolute; 
+  top: 150px;*/
+  margin-left: 1250px;
+  /* right: inherit; */
   padding: 12.5px 30px;
   border: 0;
   border-radius: 100px;
@@ -187,21 +193,19 @@ div #child {
 #card {
   width: 300px;
   height: 300px;
-  top: 150px;
   border-radius: 8px;
   text-align: center;
   overflow: hidden;
-  margin: 50px;
-  margin-left: 120px;
+  margin-left: 150px;
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
-  position: relative;
+  /* position: relative; */
 }
 
 #card img {
   text-align: center;
   width: 300px;
   height: 300px;
-  position: relative;
+  /* position: relative; */
 }
 
 #card:hover {
@@ -212,30 +216,30 @@ div #child {
 .introduce {
   background-color: #fff;
   width: 100%;
-  height: 700px;
-  margin-top: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  font-family: SpoqaHanSansNeo-Regular;
+  /* margin-top: 30px; */
+  /* margin-bottom: 150px; */
 }
 
 .introduce #footer_logo {
-  position: absolute;
+  /* position: absolute; */
   width: 300px;
-  height: 100px;
-  margin-top: 550px;
-  left: 0;
+  height: 200px;
+  display: inline-flex;
 }
 
-.introduce p {
-  position: absolute;
+.introduce span {
   font-size: 15px;
   font-weight: bold;
-  margin-top: 570px;
-  margin-left: 300px;
+  margin-left: 100px;
 }
 
 .introduce #knut {
   width: 50px;
   height: 50px;
-  margin-top: 550px;
-  margin-left: -370px;
-  position: absolute;
+  margin: 0 20px;
+  margin-left: 50px;
 }
