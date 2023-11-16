@@ -1,6 +1,7 @@
 #self_title {
   color: #fff;
   font-size: 46px;
+  font-family: "Courier New", Courier, monospace;
   margin: 100px;
   top: 18%;
   left: 35%;
@@ -19,71 +20,115 @@ main span {
   font-weight: 700;
   color: #000;
 }
-main .expain {
-  position: absolute;
-  padding-right: 16px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #39393d;
-  background-color: #fff;
+main #jm-font {
+  color: rgb(67, 69, 73);
+  font-size: 20px;
 }
 .wrap #wrap_img {
-  margin-left: 450px;
+  margin-left: 550px;
 }
-.sub-title {
+#sub-title {
   margin-top: 50px;
+  font-family: "Courier New", Courier, monospace;
 }
-.wrap #sub-title1 strong {
-  top: -300px;
-  font-size: 18px;
-  background-color: #000066;
-  color: white;
-}
+
 main img {
-  width: 600px;
-  height: 300px;
+  width: 550px;
+  height: 200px;
   padding: 0;
   border: 0;
   vertical-align: baseline;
   visibility: visible;
   image-rendering: -webkit-optimize-contrast;
 }
-main img:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 40%;
-  right: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #dcdcde;
-}
 
 .wrap #bgr {
+  margin-top: -100px;
   position: absolute;
-  width: 1020px;
+  width: 1050px;
   height: 700px;
 }
 
-.wrap #sub-title1 {
+.wrap #sub_title1 {
   position: absolute;
-  top: 170%;
-  left: 10%;
+  font-family: "Courier New", Courier, monospace;
+  top: 130%;
+  left: 15%;
+}
+.wrap #sub_title1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; /* 밑줄의 높이 조절 */
+  background: #f7d358;
+  border-bottom: #f7d358 5px solid;
 }
 #text_box {
   position: absolute;
   color: #000;
-  top: 175%;
-  left: 10%;
-  font-size: 12px;
-  font-weight: 500;
+  top: 135%;
+  left: 15%;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 #text_box1 {
   width: 600px;
   height: 200px;
   background: #f2f2f2;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   display: inline-block;
+}
+.wrap .child-list {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 135%;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+  margin-left: 35px;
+}
+
+.wrap .child img {
+  width: 300px;
+  height: 300px;
+}
+.child-list .child h5 {
+  color: #f7d358;
+  font-family: "Courier New", Courier, monospace;
+}
+.child h5 p {
+  margin-bottom: 100px;
+}
+.child p {
+  margin-left: 40px;
+  font-weight: 600;
+}
+
+#sub-title2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 13%;
+  width: 100%;
+  height: 3px;
+  background: #f7d358;
+  border-bottom: #f7d358 5px solid;
+}
+
+#self_wrap {
+  font-family: "Courier New", Courier, monospace;
+  position: absolute;
+  top: 210%;
+}
+
+#inspect {
+  position: absolute;
+  top: 30%;
+  width: 100%;
 }

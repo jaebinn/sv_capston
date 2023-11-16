@@ -13,10 +13,11 @@
   padding: 0;
 }
 main .hi {
-  margin-top: 130px;
   font-weight: 500;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 130px;
   margin-left: 510px;
-  text-decoration: underline solid 8px #fe9a2e;
+  text-decoration: underline solid 5px #f7d358;
 }
 main .hi:before {
   content: "";

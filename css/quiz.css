@@ -56,6 +56,7 @@
   font-family: sans-serif;
 }
 .info_title span {
+  font-family: "Courier New", Courier, monospace;
   white-space: nowrap;
   margin-left: 160px;
 }
