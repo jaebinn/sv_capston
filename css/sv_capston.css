@@ -70,28 +70,28 @@ body {
   color: #fff;
 }
 .container #button_3 a {
-  background-color: #f78181;
+  background-color: #81f7f3;
   position: absolute;
-  top: 250px;
-  right: 500px;
-  padding: 10px 20px;
-  font-weight: bold;
-  color: #fff;
-}
-.container #button_3-1 a {
-  background-color: #f78181;
-  position: absolute;
-  top: 250px;
+  top: 200px;
   right: 400px;
   padding: 10px 20px;
   font-weight: bold;
   color: #fff;
 }
-.container #button_3-2 a {
-  background-color: #f78181;
+.container #button_3-1 a {
+  background-color: #81f7f3;
   position: absolute;
-  top: 250px;
+  top: 200px;
   right: 300px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.container #button_3-2 a {
+  background-color: #81f7f3;
+  position: absolute;
+  top: 200px;
+  right: 200px;
   padding: 10px 20px;
   font-weight: bold;
   color: #fff;

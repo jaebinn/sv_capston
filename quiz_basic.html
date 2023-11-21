@@ -19,85 +19,77 @@
 	<script src="https://kit.fontawesome.com/a076d05399,js"></script>
 </head>
   </head>
-  <body>
+  <body style="
+  background-image: url(/src/LinkWith/image/대화놀이\ 배경.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+">
     <!-- navigation.ejs -->
 <!-- 사이트 상단 -->
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-    <h1 id="logo">
-        <a href="./sv_capston.html" class="logo">
-          <span>사랑의 매듭</span>
-        </a>
-      </h1>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <h1 id="logo">
+            <a href="./sv_capston.html" class="logo">
+            <span>사랑의 매듭</span>
+            </a>
+        </h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./introduce.html">소개</a>
-              <ul class="dropdown-menu">
-                  <li><a href="./introduce.html">인사말</a></li>
-                  <li><a href="./activity.html">활동나눔</a></li>
-                  <li><a href="./logo.html">로고</a></li>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./introduce.html">소개</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./introduce.html">인사말</a></li>
+                    <li><a href="./activity.html">활동나눔</a></li>
+                    <li><a href="./logo.html">로고</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./self.html">자가진단</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./welfare.html">복지사업</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./notice_board.html">소통공간</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./notice_board.html">자유게시판</a></li>
+                    <li><a href="./qna.html">Q&A</a></li>
+                    <li><a href="./dataroom.html">자료실</a></li>
+                </ul>
+            </li>
 
-              </ul>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="./self.html">자가진단</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./welfare.html">복지사업</a>
-        </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./notice_board.html">소통공간</a>
-              <ul class="dropdown-menu">
-                  <li><a href="./notice_board.html">자유게시판</a></li>
-                  <li><a href="./qna.html">Q&A</a></li>
-                  <li><a href="./dataroom.html">자료실</a></li>
-              </ul>
-          </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./quiz_basic.html">대화연습</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./quiz_basic.html">초급</a></li>
+                    <li><a href="./quiz_intermediate.html">중급</a></li>
+                    <li><a href="./quiz_Advanced.html">고급</a></li>
+                </ul>
+            </li>
+        </ul>
 
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./quiz_basic.html">대화연습</a>
-              <ul class="dropdown-menu">
-                  <li><a href="./quiz_basic.html">초급</a></li>
-                  <li><a href="./quiz_intermediate.html">중급</a></li>
-                  <li><a href="./quiz_Advanced.html">고급</a></li>
-              </ul>
-          </li>
-      </ul>
-
-      <a href="./login.html" class="btn btn-light mr-2">로그인</a>
-      <a href="./register.html" class="btn btn-light">회원가입</a>
-    </div>
-</nav>
-
-    <!-- Start Quiz Button -->
-    <!-- <img src="./image/퀴즈.png" class="quiz" alt=""> -->
-    <main>
-        <!-- <div class="start_btn"><button>Start Quiz</button></div> -->
-        <!-- Info Box -->
-        <div class="info_box">
-            <div class="info_title">
-                <span>대화놀이</span>
-            </div>
-            <div class="info_list">
+        <a href="./login.html" class="btn btn-light mr-2">로그인</a>
+        <a href="./register.html" class="btn btn-light">회원가입</a>
+        </div>
+    </nav>
+    <div id="quiz_img">
+        <div class="container">
+            <div class="info_box">
+                <h3>대화놀이</h3>
                 <div class="info">1. 대화연습 <strong style="color: red;">초급방</strong>입니다.</div>
                 <div class="info">2. 다음 대화에 이어질 알맞은 문장 혹은 단어를 잘 선택하세요.</div>
                 <div class="info">3. 정답을 체크하는 순간 정답유무<strong>(정답은 초록색, 오답은 빨간색)</strong>가 보이니 신중히 선택하세요.</div>
-            </div>
-            <div class="buttons">
-                <a href="./sv_capston.html"><button id="quit">나가기</button></a>
-                <a href="./quiz_box_basic.html"><button id="restart">시작!</button></a>
-
+                <div class="container">
+                    <img src="./image/대화놀이 캐릭터.png" alt="" style="width: 700px; height: 200px; margin-left: 40px"><br>
+                    <a href="./quiz_box_basic.html" style="text-decoration: none;"><button type="button" class="btn btn-warning" style="padding: 10px 50px; color: #fff;">시작!</button></a>
+                </div>
             </div>
         </div>
-        
-    </main>
-    <section>
-        <img src="./image/대화놀이.png" alt="">
-    </section>
+    </div>
+    
   </body>
 </html>

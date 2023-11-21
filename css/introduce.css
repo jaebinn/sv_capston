@@ -33,7 +33,7 @@ a {
 }
 
 .tab_menu {
-  margin-left: 450px;
+  margin-left: 420px;
 }
 .our__title-line {
   /* display: inline-block; */
@@ -53,26 +53,7 @@ a {
   line-height: 1.33;
   color: #1d1d1e;
 }
-.our__title-wrapper {
-  /* position: relative; */
-  /* margin-bottom: 17px; */
-}
-/* .our__title-wrapper:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  height: 1px;
-  background-color: #dcdcde;
-} */
-.intro_wrap {
-  /* width: 100%;
-  font-size: 18px;
-  background-image: url(/src/LinkWith/image/느린학습자\ 홈페이지\ 메인화면\ 배경.jpg)
-    no-repeat center center;
-  background-size: cover;*/
-}
+
 .intro_wrap img {
   width: 100%;
   height: 500px;
@@ -124,25 +105,6 @@ a {
   transform: translateY(-10px);
 }
 
-.card .heading {
-  font-size: 20px;
-}
-
-.card .data {
-  display: block;
-  flex-direction: column;
-  font-size: 12px;
-  color: #666;
-}
-
-.card .data span {
-  padding: 0;
-}
-
-.card .data .date {
-  margin-bottom: 2px;
-}
-
 input[type="radio"] {
   display: none;
 }
@@ -182,11 +144,9 @@ input[type="radio"] + label {
 .btn:hover {
   background-color: #f7d358;
 }
-#tab1,
-#tab2,
-#tab3s {
+.cont {
   background-image: url(/src/LinkWith/image/느린학습자\ 홈페이지\ 메인화면\ 배경.jpg)
-    no-repeat center center;
+    no-repeat center;
   background-size: cover;
   width: 100%;
 }

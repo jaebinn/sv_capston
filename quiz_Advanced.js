@@ -82,6 +82,10 @@ function showQuestion() {
   });
 }
 function resetState() {
+  var imgDiv = document.querySelector("div img");
+  if (imgDiv) {
+    imgDiv.parentNode.removeChild(imgDiv);
+  }
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild);
@@ -107,9 +111,20 @@ function selectAnswer(e) {
 
 function showScore() {
   resetState();
+  var imgDiv = document.createElement("div");
+  var img = document.createElement("img");
+  img.src = "image/고급.png";
+  img.style.width = "500px"; // 원하는 너비로 설정
+  img.style.height = "auto"; // 높이는 자동으로 조정
+  imgDiv.style.marginLeft = "110px";
+  imgDiv.appendChild(img);
+
   questionElement.innerHTML = `총 맞은 개수는 ${questions.length}문제 중 ${score}문제 맞았습니다!`;
+
   nextButton.innerHTML = "다시 풀어보기!";
   nextButton.style.display = "block";
+
+  answerButtons.parentNode.insertBefore(imgDiv, answerButtons.nextSibling);
 }
 
 function handleNextButton() {
